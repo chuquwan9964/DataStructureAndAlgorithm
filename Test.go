@@ -1,7 +1,7 @@
 package main
 
 import (
-	"DataStructureAlgorithm/RadixSort"
+	"./RadixSort"
 	"fmt"
 	"math/rand"
 	"time"
@@ -15,7 +15,7 @@ func main() {
 		//slice = append(slice, i)
 	}
 	begin := time.Now()
-	RadixSort.RadixSort(slice)
+	slice = RadixSort.RadixSort(slice)
 	end := time.Now()
 	fmt.Println(end.Sub(begin).Milliseconds(),"ms")
 }
